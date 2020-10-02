@@ -11,10 +11,12 @@
 
     function a() {
       let y = 2;
+      output(x);
     }
 
     function b() {
       let z = 3;
+      output(x);
     }
 
     function output(value) {
@@ -22,6 +24,33 @@
       document.body.appendChild(para);
       para.textContent = 'Value: ' + value;
     }
+
+    function add7(number){
+      return number + 7;
+    }
+
+    function multiply(num1, num2){
+      return num1*num2;
+    }
+
+    function capitalize(str){
+      return str.slice(0, 1).toUpperCase() + str.slice(1);
+    }
+
+    function lastLetter(str){
+      return str.charAt(str.length-1);
+    }
+    function fizzbuzz(num){
+      for (i=1;i<=num;i++){
+        if (i%3 == 0)
+          console.log('Fizz');
+        else if (i%5 == 0)
+          console.log('Buzz');
+        else
+          console.log(i);
+      }
+    }
+    
   </script>
 </body>
 </html>
